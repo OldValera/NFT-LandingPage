@@ -104,10 +104,11 @@
         line-height: 22px;
     }
 
-    &__eth{
+    &__eth {
         display: block;
     }
-    &__bid-time{
+
+    &__bid-time {
         display: flex;
         flex-direction: column;
     }
@@ -175,6 +176,25 @@
         font-size: 24px;
         font-weight: 700;
     }
+    &__arrow-btn{
+        position: absolute;
+        bottom: 0;
+        display: block;
+        left: 50%;
+        transform: translateX(-50% ) translateY(-100%);
+    }
+    &__arrow-img{
+        width: 45px;
+    }
+}
 
-
+.partners {
+    margin-top: 185px;
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 137px;
+    }
+   
 }

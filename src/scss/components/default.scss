@@ -29,7 +29,11 @@ button {
 
 .container {
   max-width: 1390px;
+  // max-width: 1920px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+}
+.swiper{
+  overflow: visible !important;
 }
