@@ -54,7 +54,7 @@ const swiper2 = () => {
 		autoHeight: true, // Автовысота
 		speed: 500, // Скорость прокрутки слайдера
 		slidesPerView: 2.5, // Количество слайдов которые будут видны,
-		spaceBetween: 15,
+		spaceBetween: 36, //15?
 		freeMode: true,
 		grabCursor: true,
 		breakpoints: {
@@ -70,9 +70,9 @@ const swiper2 = () => {
 		}
 	});
 }
-
+	
 const swiper3 = () => {
-	new Swiper('.categories-slider', {
+	new Swiper('.explore__slider', {
 		navigation: {
 			nextEl: '.swiper-button-next3',
 			prevEl: '.swiper-button-prev3' // Включить стрелочки

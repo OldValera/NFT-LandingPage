@@ -1,0 +1,33 @@
+.creators {
+    &__title {
+        margin-top: 104px;
+        margin-bottom: 80px;
+
+        &::after {
+            background: #E03054;
+            top: 10px;
+            left: 33%;
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__author-name{
+        font-family: 'Oxanium';
+        font-weight: 600;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+    }
+
+
+
+
+
+}

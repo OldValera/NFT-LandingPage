@@ -2,15 +2,16 @@ body {
   overflow-x: hidden;
   position: relative;
   color: $white2;
-  background-color:#1C121F;
+  background-color: #1C121F;
   // font-family: 'Open Sans';
   @include font('Work sans', 400);
 
   &.active-body {
     overflow: hidden;
   }
+
   ;
-  
+
 }
 
 h1,
@@ -34,6 +35,49 @@ button {
   padding: 0 15px;
   margin: 0 auto;
 }
-.swiper{
+
+.swiper {
   overflow: visible !important;
+}
+
+.slider-title {
+  margin-bottom: 84px;
+  font-family: 'Oxanium';
+  font-size: 64px;
+  text-align: center;
+  line-height: 130px;
+  font-weight: 700;
+  color: $white2;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+}
+
+.slider-btn {
+  color: #ffff;
+  font-size: 30px;
+  line-height: 35px;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border: 1px solid #FDE8B3;
+  background: transparent;
+  padding: 24px 64px;
+  display: flex;
+  margin-top: 108px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  &:hover{
+    background: #FFCE4E;
+    border-color:#FFCE4E;;
+  }
 }
