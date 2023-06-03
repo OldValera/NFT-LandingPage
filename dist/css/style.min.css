@@ -3064,17 +3064,123 @@ button.swiper-pagination-bullet {
   top: 10px;
   left: 33%;
 }
-.creators__item {
-  display: flex;
-  justify-content: space-between;
-}
-.creators__author-name {
-  font-family: "Oxanium";
-  font-weight: 600;
-}
 .creators__items {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0px 0px;
+  gap: 56px 72px;
+}
+.creators__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 608px;
+  width: 100%;
+  padding: 28px 64px 28px 28px;
+  background: #302034;
+  box-shadow: inset 2px 0px 0px #E03054;
+}
+.creators__authore-info {
+  display: flex;
+  align-items: center;
+}
+.creators__avatar-img {
+  margin-right: 24px;
+  width: 104px;
+  height: 104px;
+}
+.creators__author-name {
+  font-family: "Oxanium";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  display: block;
+}
+.creators__author-eth {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #BDAAC1;
+}
+.creators__items-count {
+  position: relative;
+}
+.creators__items-count span {
+  display: block;
+}
+.creators__items-count::after {
+  position: absolute;
+  content: "";
+  background: #49374E;
+  left: -44px;
+  top: -9px;
+  height: 100px;
+  width: 3px;
+}
+.creators__count {
+  font-family: "Oxanium";
+  font-size: 32px;
+  color: #F5FBF2;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.creators__items-label {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #908294;
+}
+
+.ready {
+  position: relative;
+  background-image: url("../../img/subscribe.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 117px 0;
+  margin-top: 80px;
+}
+.ready__title {
+  margin-top: 170px;
+  font-family: "Oxanium";
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  text-align: center;
+}
+.ready__form {
+  margin-top: 25px;
+  max-width: 680px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 25px;
+  outline: none;
+  border: 1px solid #E7B226;
+}
+.ready__input {
+  font-size: 24px;
+  padding: 30px 30px 30px 50px;
+  background: transparent;
+  outline: none;
+  color: #fff;
+  width: 70%;
+  outline: none;
+}
+.ready__input::placeholder {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #A48EA9;
+}
+.ready__btn {
+  width: 40%;
+  text-align: center;
+  background-color: #E7B226;
+  min-height: 100%;
+  color: #251928;
+  font-size: 24px;
+  font-weight: 700;
 }

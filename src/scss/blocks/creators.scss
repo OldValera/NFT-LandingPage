@@ -9,25 +9,87 @@
             left: 33%;
         }
     }
-    &__item {
-        display: flex;
-        justify-content: space-between;
-
-    }
-    &__author-name{
-        font-family: 'Oxanium';
-        font-weight: 600;
-    }
 
     &__items {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 0px 0px;
+        gap: 56px 72px;
     }
 
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 608px;
+        width: 100%;
+        padding: 28px 64px 28px 28px;
+        background: #302034;
+        box-shadow: inset 2px 0px 0px #E03054;
 
+    }
 
+    &__authore-info {
+        display: flex;
+        align-items: center;
 
+    }
 
+    &__avatar-img {
+        margin-right: 24px;
+        width: 104px;
+        height: 104px;
+    }
+
+    &__author-name {
+        font-family: 'Oxanium';
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 32px;
+        display: block;
+    }
+
+    &__author-eth {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #BDAAC1;
+    }
+
+    &__items-count {
+        span {
+            display: block;
+        }
+
+        position: relative;
+
+        // padding-left: 45px;
+        // border-left: 2px solid #49374E;
+        &::after {
+            position: absolute;
+            content: '';
+            background: #49374E;
+            left: -44px;
+            top: -9px;
+            height: 100px;
+            width: 3px;
+        }
+    }
+
+    &__count {
+        font-family: 'Oxanium';
+        font-size: 32px;
+        color: $white2;
+        line-height: 35px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    &__items-label {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #908294;
+    }
 }

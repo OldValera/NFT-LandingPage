@@ -1,0 +1,78 @@
+.ready {
+    position: relative;
+    background-image: url('../../img/subscribe.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 117px 0;
+    &::before{
+        // position: absolute;
+        // content: '';
+        // left: 0;
+        // right: 10%;
+        // bottom: 0;
+        // width: 100%;
+        // height: 100%;
+        // width: 600px;
+		// height: 400px;
+        // background-image: url('../../img/ready-bg.png');
+        // background-repeat:no-repeat ;
+        // background-size: cover;
+        
+        
+
+    }
+    margin-top: 80px;
+
+    &__title {
+        margin-top: 170px;
+        font-family: "Oxanium";
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        text-align: center;
+    }
+
+    &__form {
+        margin-top: 25px;
+        max-width: 680px;
+        width: 100%;
+        display: flex;   
+		justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 25px;
+        outline: none;
+        border: 1px solid #E7B226;
+       
+
+
+    }
+
+    &__input {
+        font-size: 24px; 
+        padding: 30px 30px 30px 50px;
+        background: transparent;
+        outline: none;
+        color: $white;
+        width: 70%;
+        &::placeholder{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 35px;
+            color: #A48EA9;
+
+        }
+        outline: none;
+    }
+
+    &__btn {
+        width: 40%;
+        text-align: center;
+        background-color: #E7B226;
+        min-height: 100%;
+        color: #251928;
+        font-size: 24px;
+        font-weight: 700;
+        
+    }
+
+}
