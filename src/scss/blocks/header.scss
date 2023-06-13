@@ -1,8 +1,19 @@
 .header {
-    margin-top: 35px;
+    margin-bottom: 140px;
+    padding-top: 35px;
 
     &__inner {
         display: flex;
+        justify-content: space-between;
+
+        @media (max-width:700px) {
+            display: none;
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -44,18 +55,48 @@
         &:hover {
             color: #FFCE4E;
         }
+
+        @media (max-width:900px) {
+
+            margin-right: 30px;
+        }
+    }
+
+    &__burger {
+        display: none;
+
+        @media (max-width:700px) {
+            display: block;
+        }
+    }
+
+    &__burger--close {
+        display: none;
+    }
+
+    @media (max-width:700px) {
+       margin-bottom: 70px;
     }
 
 }
+
 .header__btn {
     margin-left: 125px;
     @extend %btn;
     padding: 22px 30px;
     color: #FFCE4E;
     background: rgba(233, 215, 167, 0.1);
+
     &:hover {
-		-webkit-box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
-		-moz-box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
-		box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
-	}
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
+        -moz-box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
+        box-shadow: 0px 0px 15px 5px rgba(255, 206, 78, 0.35);
+    }
+
+    @media (max-width:900px) {
+
+        margin-left: 40px;
+    }
+
+
 }

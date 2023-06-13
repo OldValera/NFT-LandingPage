@@ -1,4 +1,7 @@
 .popular{
+    background-image: url('../../img/popular-bg.png');
+    background-repeat: no-repeat;
+    background-position: 0 -50px;
     &__img{
         background-repeat: no-repeat;
         background-size: cover;

@@ -36,7 +36,7 @@ const swiper = () => {
 			1100: {
 				slidesPerView: 3
 			},
-			600: {
+			700: {
 				slidesPerView: 2
 			}
 		}
@@ -53,7 +53,7 @@ const swiper2 = () => {
 		modules: [Navigation, FreeMode], // Модули которые будут использоваться
 		autoHeight: true, // Автовысота
 		speed: 500, // Скорость прокрутки слайдера
-		slidesPerView: 2.5, // Количество слайдов которые будут видны,
+		slidesPerView: 2, // Количество слайдов которые будут видны,
 		spaceBetween: 36, //15?
 		freeMode: true,
 		grabCursor: true,
@@ -62,7 +62,7 @@ const swiper2 = () => {
 				spaceBetween: 42
 			},
 			1100: {
-				slidesPerView: 2.5
+				slidesPerView: 2
 			},
 			600: {
 				slidesPerView: 2
@@ -80,7 +80,7 @@ const swiper3 = () => {
 		modules: [Navigation, FreeMode], // Модули которые будут использоваться
 		autoHeight: true, // Автовысота
 		speed: 500, // Скорость прокрутки слайдера
-		slidesPerView: 3, // Количество слайдов которые будут видны,
+		slidesPerView: 1, // Количество слайдов которые будут видны,
 		spaceBetween: 15,
 			freeMode: true,
 			grabCursor: true,
@@ -91,7 +91,7 @@ const swiper3 = () => {
 				1100: {
 					slidesPerView: 3
 				},
-				600: {
+				700: {
 					slidesPerView: 2
 				}
 			}
@@ -101,9 +101,9 @@ const swiper3 = () => {
 function detectDevice() {
 	if (window.innerWidth < 600) {
 		for (let i = 0; i <= 2; i++) {
-			document.querySelectorAll('.auctions-slide')[i].style.display = 'block';
-			document.querySelectorAll('.popular-slide')[i].style.display = 'block';
-			document.querySelectorAll('.categories-slide')[i].style.display = 'block';
+			document.querySelectorAll('.slider__item')[i].style.display = 'block';
+			document.querySelectorAll('.popular__item')[i].style.display = 'block';
+			document.querySelectorAll('.explore__slider-item')[i].style.display = 'block';
 		}
 	} else {
 		swiper();
