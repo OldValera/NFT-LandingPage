@@ -15,6 +15,24 @@ import AOS from 'aos';
 
 
 flsFunctions.isWebp();
+import burger from './modules/burger.js'
+const footerMainContainer = document.querySelector(".footer__inner")
+const footerMediaContainer = document.querySelector(".media")
+const footerText = document.querySelector(".footer__rights")
+
+
+
+function moveContainer(){
+
+	if (window.innerWidth <= 1000) {
+		footerMainContainer.appendChild(footerMediaContainer);
+		footerMainContainer.appendChild(footerText);
+	  }
+}
+moveContainer();
+
+
+
 
 const swiper = () => {
 	new Swiper('.slider', {
@@ -36,7 +54,7 @@ const swiper = () => {
 			1100: {
 				slidesPerView: 3
 			},
-			700: {
+			600: {
 				slidesPerView: 2
 			}
 		}
@@ -70,7 +88,7 @@ const swiper2 = () => {
 		}
 	});
 }
-	
+
 const swiper3 = () => {
 	new Swiper('.explore__slider', {
 		navigation: {
@@ -82,19 +100,19 @@ const swiper3 = () => {
 		speed: 500, // Скорость прокрутки слайдера
 		slidesPerView: 1, // Количество слайдов которые будут видны,
 		spaceBetween: 15,
-			freeMode: true,
-			grabCursor: true,
-			breakpoints: {
-				1300: {
-					spaceBetween: 42
-				},
-				1100: {
-					slidesPerView: 3
-				},
-				700: {
-					slidesPerView: 2
-				}
+		freeMode: true,
+		grabCursor: true,
+		breakpoints: {
+			1300: {
+				spaceBetween: 42
+			},
+			1100: {
+				slidesPerView: 3
+			},
+			700: {
+				slidesPerView: 2
 			}
+		}
 	});
 }
 
@@ -113,6 +131,10 @@ function detectDevice() {
 }
 
 detectDevice();
+
+
+
+
 
 AOS.init({
 	// Global settings:
