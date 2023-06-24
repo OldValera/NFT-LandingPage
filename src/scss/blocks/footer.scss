@@ -56,25 +56,22 @@
     display: flex;
     padding-bottom: 55px;
     align-items: center;
-    justify-content: center;
     margin-right: auto;
     &__link {
         cursor: pointer;
-
         &:not(:last-child) {
             margin-right: 30px;
         }
-    }
-
+    } 
     a:hover {
         path {
             fill: #F7D7FF;
         }
     }
-
     @media (max-width:1000px) {
         margin: 50px auto 7px auto;
         padding-bottom: 0px;
+        justify-content: center;
     }
 }
 
@@ -85,6 +82,10 @@
         line-height: 50px;
         font-weight: 500;
         color: #96839B;
+        transition: all .3s;
+        &:hover{
+            color: #FFCE4E;
+        }
     }
 }
 

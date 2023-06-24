@@ -2,6 +2,7 @@
     margin-bottom: 140px;
     padding-top: 35px;
     position: relative;
+    z-index: 100;
 
     &__inner {
         display: flex;
@@ -18,13 +19,14 @@
             // padding-top: 40px;
             // padding-top: -30px;
             justify-content: center;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             // z-index: 100;
+            // background-color: #1C121F;
         }
 
         &.active {
-            margin-top: -20px;
+            margin-top: -40px;
             padding-bottom: 100px;
             transform: translateY(0);
         }
