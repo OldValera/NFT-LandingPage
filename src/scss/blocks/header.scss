@@ -16,13 +16,9 @@
             height: 100vh;
             width: 100%;
             transition: all .5s;
-            // padding-top: 40px;
-            // padding-top: -30px;
             justify-content: center;
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            // z-index: 100;
-            // background-color: #1C121F;
         }
 
         &.active {
